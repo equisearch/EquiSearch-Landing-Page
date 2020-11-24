@@ -54,6 +54,18 @@ a {
 .w-100 {
    width: 100%; 
 }
+.container {
+    @include container(small);
+    @include media-query-grow(768px) {
+        @include container(medium);
+    }
+    @include media-query-grow(1200px) {
+        @include container(large);
+    }
+    @include media-query-grow(1440px) {
+        @include container(x-large);
+    }
+}
 button {
     background: none;
     border: none;
