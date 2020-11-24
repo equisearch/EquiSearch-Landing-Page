@@ -1,0 +1,59 @@
+@import "../utils/mixins";
+
+.purpose {
+    .flex {
+        flex-direction: column;
+        @include media-query-grow(1024px) {
+            flex-direction: row;
+        }
+    }
+    .purpose-item {
+        margin-bottom: 2.5rem;
+        &:hover {
+            .overlay {
+                height: 100%;
+                .text {
+                    h3 {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            bottom: 0;
+            background: $black;
+            opacity: 0.75;
+            right: 0;
+            left: 0;
+            height: 60px;
+            transition: 0.5s all;
+            flex-direction: row;
+            .icon {
+                background: $blue;
+                padding: 1rem;
+                opacity: 1 !important;
+            }
+            .text {
+                h3 {
+                    color: $white;
+                    padding: 1rem;
+                    font-family: $poppins;
+                    transition: 0.5s all;
+                }
+                p {
+                    color: $white;
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+    @include media-query-grow(1024px) {
+        .purpose-item + .purpose-item {
+            margin-left: 2rem;
+        }
+    }
+}

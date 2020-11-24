@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import Carousel from './components/Carousel';
 import Header from './components/Header';
+import Purpose from './components/Purpose';
 import "./sass/main.scss";
 
 export class App extends Component {
   render() {
     return (
-      <div>
+      <div className="app">
         <Header/>
         <Carousel/>
+        <Purpose/>
       </div>
     )
   }

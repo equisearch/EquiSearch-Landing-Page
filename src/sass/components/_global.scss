@@ -24,6 +24,9 @@ a {
 }
 
 /* global */
+.overflow-hidden {
+    overflow: hidden;
+}
 .flex {
     display: flex;
 }
@@ -129,6 +132,9 @@ img {
 }
 
 /* global to application */
+.app {
+    background: $dark;
+}
 .btn {
     padding: 1rem 1rem;
     font-family: $raleway;
@@ -139,4 +145,25 @@ img {
 .btn-primary {
     background: $blue;
     color: $white;
+}
+.section {
+    margin: 3rem 0;
+}
+.title {
+    font-family: $poppins;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 3rem;
+    color: $white;
+    &::before {
+        position: absolute;
+        content: "";
+        background: $blue;
+        height: 4px;
+        width: 50px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
