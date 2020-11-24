@@ -7,7 +7,7 @@ const MobileNav = (props) => {
     return (
         <div className={`mobile-nav ${display === false ? "none" : "block"}`}>
             <nav>
-                <ul>
+                <ul className="container">
                     <li><a href="/">Home</a></li>
                     <li><a href="/">Purpose</a></li>
                     <li><a href="/">About</a></li>

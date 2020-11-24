@@ -1,8 +1,54 @@
 @import "../utils/mixins";
+@import "../utils/variables";
+
+/* mobile and desktop */
+.desktop-nav, .mobile-nav {
+    nav {
+        ul {
+            li {
+                a {
+                    color: $white;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-family: $hind;
+                }
+            }
+        }
+    }
+}
+
+/* mobile nav */
+.mobile-nav {
+    nav {
+        ul {
+            padding: 1rem 0;
+            li {
+                
+            }
+            li + li {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
 
 /* desktop nav */
 .desktop-nav {
     @include media-query-grow(1024px) {
         display: block;
+        nav {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+                }
+                li + li {
+                    margin-left: 2rem;
+                }
+            }
+        }
     }
 }
