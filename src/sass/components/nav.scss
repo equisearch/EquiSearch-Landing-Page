@@ -1,0 +1,8 @@
+@import "../utils/mixins";
+
+/* desktop nav */
+.desktop-nav {
+    @include media-query-grow(1024px) {
+        display: block;
+    }
+}
