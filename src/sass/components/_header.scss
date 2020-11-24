@@ -1,0 +1,15 @@
+@import "../utils/variables";
+
+header {
+    padding: 1rem;
+    background: $dark;
+    .logo + .logo-text {
+        margin-left: 0.4rem;
+    }
+    .logo {
+        width: 3rem;
+    }
+    .logo-text {
+        width: 8rem;
+    }
+}
