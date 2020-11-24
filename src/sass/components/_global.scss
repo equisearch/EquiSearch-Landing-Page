@@ -92,7 +92,7 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba($color: #000000, $alpha: 0.5)
+    opacity: 0.25;
 }
 img {
     width: 100%;
@@ -132,6 +132,9 @@ img {
 .btn {
     padding: 1rem 1rem;
     font-family: $raleway;
+    font-size: 14px;
+    display: inline-block;
+    margin: 1rem 0;
 }
 .btn-primary {
     background: $blue;

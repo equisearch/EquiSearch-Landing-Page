@@ -10,7 +10,6 @@ const Header = () => {
 
     // state 
     const [mobileNav, setMobileNav] = useState(false);
-    const [nav, setNav] = useState(false);
 
     // functions
     const toggleMobileNav = () => {
