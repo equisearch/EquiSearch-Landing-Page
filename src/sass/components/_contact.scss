@@ -4,8 +4,29 @@
     .title {
         margin-bottom: 1rem;
     }
-    .flex {
+    .contact-wrap {
         flex-direction: column;
+        .membership, .contact-form {
+            margin-bottom: 2rem;
+        }
+        @include media-query-grow(768px) {
+            flex-direction: row;
+            .membership, .contact-form {
+                width: 50%;
+            }
+            .membership, .contact-form {
+                margin-bottom: 1rem;
+            }
+            .membership + .contact-form {
+                margin-left: 2rem;
+                @include media-query-grow(1200px) {
+                    margin-left: 3rem;
+                }
+                @include media-query-grow(1440px) {
+                    margin-left: 4rem;
+                }
+            }
+        }
         .membership {
             font-family: $hind;
             ul {
@@ -15,6 +36,24 @@
                     span {
                         margin-left: 0.5rem;
                     }
+                }
+            }
+        }
+        .contact-form {
+            form {
+                .input {
+                    border: none;
+                    padding: 0.75rem 1rem;
+                    margin-bottom: 1.5rem;
+                    background: $light;
+                    font-family: $hind;
+                }
+                textarea {
+                    height: 100px;
+                }
+                button {
+                    background: $text-dark;
+                    color: $white;
                 }
             }
         }
