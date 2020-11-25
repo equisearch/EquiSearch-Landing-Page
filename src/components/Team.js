@@ -5,6 +5,8 @@ const Team = () => {
 
     // state
     const [slides, setSlides] = useState(1);
+
+    // set the state
     useEffect(() => {
         let width = screenWidth(window.screen.width); // returns a number between 1 and 3 based of width of screen
         setSlides(width);
@@ -21,6 +23,8 @@ const Team = () => {
         }
     }
 
+    // variable declarations
+    const userImg = "https://www.xovi.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png";
     const teamMembers = [
         {
             id: 1,
@@ -58,8 +62,14 @@ const Team = () => {
                 <Slider {...settings}>
                     {teamMembers.map(member => {
                         return (
-                            <div key={member.id}>
-                                {member.name}
+                            <div key={member.id} className="member-item">
+                                <div className="info-wrap">
+                                    <div className="img-wrap">
+                                        <img src={(member.img) ? member.img : userImg} alt={member.name}/>
+                                    </div>
+                                    <h3>{member.name}</h3>
+                                    <span className="block">{(member.role) ? member.role : "EquiSearch Member"}</span>
+                                </div>
                             </div>
                         )
                     })}

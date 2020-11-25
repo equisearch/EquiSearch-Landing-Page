@@ -7,8 +7,10 @@
             flex-direction: row;
         }
     }
+    .purpose-item + .purpose-item {
+        margin-top: 2.5rem;
+    }
     .purpose-item {
-        margin-bottom: 2.5rem;
         &:hover {
             .overlay {
                 height: 100%;
@@ -54,6 +56,7 @@
     @include media-query-grow(1024px) {
         .purpose-item + .purpose-item {
             margin-left: 2rem;
+            margin-top: 0;
         }
     }
 }

@@ -1,0 +1,30 @@
+.team {
+    background: $white;
+    .title {
+        color: $black;
+    }
+    .slick-slide + .slick-slide {
+        
+    }
+    .member-item {
+        background: $light;
+        .info-wrap {
+            padding: 2rem;
+            .img-wrap {
+                width: 40%;
+                margin: 0 auto;
+                background: $white;
+                border-radius: 50%;
+                img {
+                    border-radius: inherit;
+                }
+            }
+            h3, span {
+                text-align: center;
+            }
+        }
+    }
+    .member-item + .member-item {
+        margin-left: 2rem;
+    }
+}
