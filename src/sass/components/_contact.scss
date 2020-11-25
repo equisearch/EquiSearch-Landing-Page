@@ -1,0 +1,22 @@
+.contact {
+    color: $white;
+    background: $blue;
+    .title {
+        margin-bottom: 1rem;
+    }
+    .flex {
+        flex-direction: column;
+        .membership {
+            font-family: $hind;
+            ul {
+                margin: 1.5rem 0;
+                li {
+                    padding: 1px 0;
+                    span {
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
