@@ -3,6 +3,7 @@ import About from './components/About';
 import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Purpose from './components/Purpose';
+import Team from './components/Team';
 import "./sass/main.scss";
 
 export class App extends Component {
@@ -13,6 +14,7 @@ export class App extends Component {
         <Carousel/>
         <Purpose/>
         <About/>
+        <Team/>
       </div>
     )
   }
