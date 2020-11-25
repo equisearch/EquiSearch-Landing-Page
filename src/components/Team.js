@@ -43,10 +43,16 @@ const Team = () => {
             name: "Kevin Wang",
             img: "",
             role: "Co-Founder"
+        },
+        {
+            id: 4,
+            name: "Jisan Jung",
+            img: "",
+            role: "Front End Developer"
         }
     ];
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: slides, // 1, 2, or 3 based on slides state
