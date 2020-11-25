@@ -1,0 +1,43 @@
+@import "../utils/mixins";
+
+.about {
+    color: $white;
+    .flex {
+        flex-direction: column;
+        @include media-query-grow(1024px) {
+            flex-direction: row;
+        }
+    }
+    .about-info, .about-img {
+        width: 100%;
+        @include media-query-grow(1024px) {
+            width: 50%;
+        }
+    }
+    .about-img + .about-info {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        @include media-query-grow(1024px) {
+            margin-left: 2rem;
+            margin-top: 0;
+        }
+    }
+    .about-info {
+        h3 {
+            font-family: $poppins;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-family: $hind;
+        }
+        p + p, .button {
+            margin-top: 1.5rem;
+        }
+    }
+    .about-img {
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

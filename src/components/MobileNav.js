@@ -9,11 +9,11 @@ const MobileNav = (props) => {
             <nav>
                 <ul className="container">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">Purpose</a></li>
                     <li><a href="/">About</a></li>
                     <li><a href="/">Team</a></li>
                     <li><a href="/">Join Us</a></li>
                     <li><a href="/">Contact</a></li>
+                    <li><a href="/">Subscribe</a></li>
                 </ul>
             </nav>
         </div>

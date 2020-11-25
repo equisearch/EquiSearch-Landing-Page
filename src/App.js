@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import About from './components/About';
 import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Purpose from './components/Purpose';
@@ -11,6 +12,7 @@ export class App extends Component {
         <Header/>
         <Carousel/>
         <Purpose/>
+        <About/>
       </div>
     )
   }
