@@ -169,3 +169,12 @@ img {
         transform: translateX(-50%);
     }
 }
+.title-left {
+    @extend .title;
+    text-align: left;
+    padding-bottom: 1rem;
+    &::before {
+        transform: translateX(0px);
+        left: 0;
+    }
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import About from './components/About';
 import Carousel from './components/Carousel';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Purpose from './components/Purpose';
 import Team from './components/Team';
@@ -17,6 +18,7 @@ export class App extends Component {
         <About/>
         <Team/>
         <Contact/>
+        <Footer/>
       </div>
     )
   }

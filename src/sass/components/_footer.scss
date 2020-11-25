@@ -1,0 +1,55 @@
+.footer, a {
+    color: $text-light;
+    .footer-wrap {
+        flex-direction: column;
+        @include media-query-grow(768px) {
+            flex-direction: row;
+            .sub-section + .sub-section {
+                margin-left: 3rem;
+            }
+        }
+        .sub-section {
+            @include media-query-grow(768px) {
+                width: 33%;
+            }
+            margin-bottom: 2rem;
+            .title-left {
+                margin-bottom: 1.5rem;
+            }
+        }
+        .info {
+            font-family: $hind;
+            .logo-wrap {
+                margin-bottom: 2rem;
+                .logo + .logo-text {
+                    margin-left: 0.4rem;
+                }
+                .logo {
+                    width: 3rem;
+                }
+                .logo-text {
+                    width: 8rem;
+                }
+            }
+        }
+        .pages {
+            nav {
+                ul {
+                    li {
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+        .footer-contact {
+            .contact-info {
+                li {
+                    padding: 0.5rem 0;
+                    a {
+                        margin-left: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
