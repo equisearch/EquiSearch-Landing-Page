@@ -12,7 +12,7 @@
         @include media-query-grow(768px) {
             flex-direction: row;
             .membership, .contact-form {
-                width: 50%;
+                
             }
             .membership, .contact-form {
                 margin-bottom: 1rem;
@@ -38,6 +38,9 @@
                     }
                 }
             }
+            @include media-query-grow(768px) {
+                width: 60%;
+            }
         }
         .contact-form {
             form {
@@ -55,6 +58,9 @@
                     background: $text-dark;
                     color: $white;
                 }
+            }
+            @include media-query-grow(768px) {
+                width: 40%;
             }
         }
     }

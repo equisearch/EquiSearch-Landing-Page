@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Nav from './Nav';
 
-const Header = () => {
+const Header = (props) => {
 
     // state 
     const [mobileNav, setMobileNav] = useState(false);
@@ -20,24 +20,26 @@ const Header = () => {
         <header>
             <div className="container">
                 <div className="flex align-center flex-between">
-                    <div className="flex align-center">
-                        <div className="logo">
-                            <img src={logo} alt="logo"/>
+                    <a href="/" className="block">
+                        <div className="flex align-center">
+                            <div className="logo">
+                                <img src={logo} alt="logo"/>
+                            </div>
+                            <div className="logo-text">
+                                <img src={whitetext} alt="logo text"/>
+                            </div>
                         </div>
-                        <div className="logo-text">
-                            <img src={whitetext} alt="logo text"/>
-                        </div>
-                    </div>
+                    </a>
                     <button type="button" onClick={toggleMobileNav} className="menu-btn">
                         <FontAwesomeIcon icon={faBars} style={{
                             color: "#fff",
                             fontSize: "1.5rem"
                         }}/>
                     </button>
-                    <Nav/>
+                    <Nav modal={props.modal}/>
                 </div>
             </div>
-            <MobileNav display={mobileNav}/>
+            <MobileNav display={mobileNav} modal={props.modal}/>
         </header>
     )
 }

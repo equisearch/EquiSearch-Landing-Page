@@ -6,7 +6,7 @@ const About = () => {
     const img = "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80";
 
     return (
-        <div className="about section">
+        <div className="about section" id="About">
             <div className="container">
             <h1 className="title">About Us</h1>
                 <div className="flex">

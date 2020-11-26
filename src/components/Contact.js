@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import axios from "axios";
 
 const Contact = () => {
 
@@ -12,7 +11,7 @@ const Contact = () => {
     }}/>
 
     return (
-        <div className="contact section">
+        <div className="contact section" id="Contact">
             <div className="container">
                 <div className="flex contact-wrap">
                     <div className="membership">

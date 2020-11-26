@@ -4,21 +4,38 @@ import Carousel from './components/Carousel';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Modal from './components/Modal';
 import Purpose from './components/Purpose';
 import Team from './components/Team';
 import "./sass/main.scss";
 
 export class App extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      modal: false
+    }
+  }
+
+  // functions
+  modalToggle() {
+    this.setState({
+      modal: true
+    }, () => console.log(this.state.modal));
+  }
+
   render() {
     return (
       <div className="app">
-        <Header/>
+        <Header modal={this.modalToggle.bind(this)}/>
         <Carousel/>
         <Purpose/>
         <About/>
         <Team/>
         <Contact/>
         <Footer/>
+        <Modal modal={this.state.modal}/>
       </div>
     )
   }

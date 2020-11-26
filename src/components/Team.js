@@ -62,7 +62,7 @@ const Team = () => {
     };
 
     return (
-        <div className="team section">
+        <div className="team section" id="Team">
             <div className="container">
                 <h1 className="title">Our Team</h1>
                 <Slider {...settings}>

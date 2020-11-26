@@ -1,0 +1,31 @@
+.modal-bg {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .tint {
+        background: $black;
+    }
+    .modal-wrap {
+        width: 100%;
+        height: 100%;
+        .modal {
+            background: $white;
+            width: 90%;
+            height: 500px;
+            @include media-query-grow(768px) {
+                width: 500px;
+                
+            }
+            .content-wrap {
+                width: 100%;
+                height: 100%;
+                .close {
+                    right: 0;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}
