@@ -6,6 +6,7 @@
     bottom: 0;
     .tint {
         background: $black;
+        opacity: 0.5;
     }
     .modal-wrap {
         width: 100%;
@@ -14,9 +15,10 @@
             background: $white;
             width: 90%;
             height: 500px;
+            animation-name: showModal;
+            animation-duration: 0.5s;
             @include media-query-grow(768px) {
                 width: 500px;
-                
             }
             .content-wrap {
                 width: 100%;
@@ -28,4 +30,10 @@
             }
         }
     }
+}
+
+/* animations */
+@keyframes showModal {
+    0% {opacity: 0; top: 40%;}
+    100% {opacity: 1; top: 50%;}
 }
