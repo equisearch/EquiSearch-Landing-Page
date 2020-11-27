@@ -22,18 +22,18 @@ export class App extends Component {
   openModal() {
     this.setState({
       modal: true
-    }, () => console.log(this.state.modal));
+    });
   }
   closeModal() {
     this.setState({
       modal: false
-    }, () => console.log(this.state.modal));
+    });
   }
 
   render() {
     return (
       <div className="app">
-        <Header modal={this.openModal.bind(this)}/>
+        <Header open={this.openModal.bind(this)}/>
         <Carousel/>
         <Purpose/>
         <About/>

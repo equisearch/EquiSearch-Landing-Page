@@ -8,6 +8,9 @@ import Nav from './Nav';
 
 const Header = (props) => {
 
+    // variables
+    const { open } = props; // toggle modal, value is either true or false
+
     // state 
     const [mobileNav, setMobileNav] = useState(false);
 
@@ -36,10 +39,10 @@ const Header = (props) => {
                             fontSize: "1.5rem"
                         }}/>
                     </button>
-                    <Nav modal={props.modal}/>
+                    <Nav open={open}/>
                 </div>
             </div>
-            <MobileNav display={mobileNav} modal={props.modal}/>
+            <MobileNav display={mobileNav} open={open}/>
         </header>
     )
 }

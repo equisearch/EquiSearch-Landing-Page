@@ -2,8 +2,12 @@ import React from 'react';
 
 const Nav = (props) => {
 
+    // variables
+    const { open } = props; // sets openModal to true
+
+    // functions
     const handleClick = () => {
-        props.modal();
+        open();
     }
 
     return (
