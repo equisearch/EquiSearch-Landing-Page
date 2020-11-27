@@ -58,7 +58,7 @@ const Team = () => {
         slidesToShow: slides, // 1, 2, or 3 based on slides state
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 7000
+        autoplaySpeed: 5000
     };
 
     return (

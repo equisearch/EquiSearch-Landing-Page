@@ -140,6 +140,7 @@ img {
     font-family: $raleway;
     font-size: 14px;
     display: inline-block;
+    transition: 0.25s all;
     &:hover {
         cursor: pointer;
     }
@@ -147,6 +148,16 @@ img {
 .btn-primary {
     background: $blue;
     color: $white;
+    &:hover {
+        background: $text-dark;
+    }
+}
+.btn-secondary {
+    @extend .btn-primary;
+    background: $black;
+    &:hover {
+        background: $dark;
+    }
 }
 .section {
     padding: 3rem 0;

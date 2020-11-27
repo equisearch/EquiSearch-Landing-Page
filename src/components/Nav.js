@@ -14,10 +14,10 @@ const Nav = (props) => {
         <div className="desktop-nav none">
             <nav>
                 <ul className="flex align-center">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Team">Team</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="/" className="nav-link">Home</a></li>
+                    <li><a href="#About" className="nav-link">About</a></li>
+                    <li><a href="#Team" className="nav-link">Team</a></li>
+                    <li><a href="#Contact" className="nav-link">Contact</a></li>
                     <li><button type="button" className="btn btn-primary" onClick={handleClick}>SUBSCRIBE</button></li>
                 </ul>
             </nav>

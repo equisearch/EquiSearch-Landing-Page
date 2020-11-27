@@ -1,4 +1,10 @@
-.footer, a {
+.footer {
+    a {
+        color: $text-light;
+        &:hover {
+            color: $blue;
+        }
+    }
     color: $text-light;
     .footer-wrap {
         flex-direction: column;

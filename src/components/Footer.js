@@ -40,18 +40,18 @@ const Footer = () => {
                         <nav>
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/">About</a></li>
-                                <li><a href="/">Team</a></li>
-                                <li><a href="/">Contact</a></li>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Team">Team</a></li>
+                                <li><a href="#Contact">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div className="footer-contact sub-section">
                         <h2 className="title-left">Contact Us</h2>
                         <ul className="contact-info">
-                            <li>{phoneIcon}<a href="/">123-456-7890</a></li>
-                            <li>{sendIcon}<a href="/">equisearched@gmail.com</a></li>
-                            <li>{userIcon}<a href="/">LinkedIn</a></li>
+                            <li>{phoneIcon}<a href="tel:123-456-7890">123-456-7890</a></li>
+                            <li>{sendIcon}<a href="mailto: equisearched@gmail.com" target="_blank" rel="noreferrer">equisearched@gmail.com</a></li>
+                            <li>{userIcon}<a href="https://www.linkedin.com/company/equisearch/" target="_blank" rel="noreferrer">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>

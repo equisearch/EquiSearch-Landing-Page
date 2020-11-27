@@ -54,10 +54,6 @@
                 textarea {
                     height: 100px;
                 }
-                button {
-                    background: $text-dark;
-                    color: $white;
-                }
             }
             @include media-query-grow(768px) {
                 width: 40%;

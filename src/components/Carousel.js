@@ -13,7 +13,7 @@ const Carousel = () => {
             },
             button: {
                 text: "ABOUT",
-                link: "/"
+                link: "#About"
             },
             url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
         },
@@ -24,8 +24,8 @@ const Carousel = () => {
                 sub: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
             },
             button: {
-                text: "SUBSCRIBE",
-                link: "/"
+                text: "OUR TEAM",
+                link: "#Team"
             },
             url: "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
@@ -37,7 +37,7 @@ const Carousel = () => {
             },
             button: {
                 text: "GET IN TOUCH",
-                link: "/"
+                link: "#Contact"
             },
             url: "https://images.unsplash.com/photo-1557425955-df376b5903c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
         },
