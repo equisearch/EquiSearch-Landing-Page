@@ -8,6 +8,7 @@ import Modal from './components/Modal';
 import Purpose from './components/Purpose';
 import Team from './components/Team';
 import "./sass/main.scss";
+import { smoothScroll } from './components/smoothScroll.js';
 
 export class App extends Component {
 
@@ -28,6 +29,10 @@ export class App extends Component {
     this.setState({
       modal: false
     });
+  }
+
+  componentDidMount() {
+    smoothScroll();
   }
 
   render() {

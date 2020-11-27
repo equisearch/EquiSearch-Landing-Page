@@ -12,9 +12,6 @@
         @include media-query-grow(768px) {
             flex-direction: row;
             .membership, .contact-form {
-                
-            }
-            .membership, .contact-form {
                 margin-bottom: 1rem;
             }
             .membership + .contact-form {
