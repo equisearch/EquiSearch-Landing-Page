@@ -9,7 +9,7 @@ import Nav from './Nav';
 const Header = (props) => {
 
     // variables
-    const { open } = props; // toggle modal, value is either true or false
+    const { open } = props; // sets openModal to true
 
     // state 
     const [mobileNav, setMobileNav] = useState(false);
@@ -20,7 +20,7 @@ const Header = (props) => {
     }
 
     return (
-        <header>
+        <header id="Header">
             <div className="container">
                 <div className="flex align-center flex-between">
                     <a href="/" className="block">

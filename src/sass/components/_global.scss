@@ -189,3 +189,10 @@ img {
         left: 0;
     }
 }
+.back-to-top {
+    position: fixed;
+    right: -50px;
+    bottom: 25px;
+    transition: 0.5s all;
+    box-shadow: 3px 3px 7px 0px rgba(50, 50, 50, 0.75);
+}

@@ -8,7 +8,10 @@ import Modal from './components/Modal';
 import Purpose from './components/Purpose';
 import Team from './components/Team';
 import "./sass/main.scss";
-import { smoothScroll } from './components/smoothScroll.js';
+import { smoothScroll, backToTop } from './components/dom.js';
+import LinkButton from './components/LinkButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 export class App extends Component {
 
@@ -30,9 +33,9 @@ export class App extends Component {
       modal: false
     });
   }
-
   componentDidMount() {
     smoothScroll();
+    backToTop();
   }
 
   render() {
@@ -46,6 +49,14 @@ export class App extends Component {
         <Contact/>
         <Footer/>
         <Modal modal={this.state.modal} close={this.closeModal.bind(this)}/>
+        <div className="back-to-top">
+          <LinkButton text={
+            <FontAwesomeIcon icon={faChevronUp} style={{
+              color: "#fff",
+              fontSize: "1rem"
+            }}/>
+          } link="#Header"/>
+        </div>
       </div>
     )
   }
