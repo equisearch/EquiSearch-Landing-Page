@@ -50,7 +50,7 @@ const Footer = () => {
                         <h2 className="title-left">Contact Us</h2>
                         <ul className="contact-info">
                             <li>{phoneIcon}<a href="tel:123-456-7890">123-456-7890</a></li>
-                            <li>{sendIcon}<a href="mailto: team@equisearch.io" target="_blank" rel="noreferrer">equisearched@gmail.com</a></li>
+                            <li>{sendIcon}<a href="mailto: team@equisearch.io" target="_blank" rel="noreferrer">team@equisearch.io</a></li>
                             <li>{userIcon}<a href="https://www.linkedin.com/company/equisearch/" target="_blank" rel="noreferrer">LinkedIn</a></li>
                         </ul>
                     </div>
