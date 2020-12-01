@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.PNG";
 import whitetext from "../assets/whitetext.svg";
 import MobileNav from './MobileNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,11 +24,11 @@ const Header = (props) => {
             <div className="container">
                 <div className="flex align-center flex-between">
                     <a href="/" className="block">
-                        <div className="flex align-center">
-                            <div className="logo">
+                        <div className="flex">
+                            <div className="logo flex align-center">
                                 <img src={logo} alt="logo"/>
                             </div>
-                            <div className="logo-text">
+                            <div className="logo-text flex align-center">
                                 <img src={whitetext} alt="logo text"/>
                             </div>
                         </div>

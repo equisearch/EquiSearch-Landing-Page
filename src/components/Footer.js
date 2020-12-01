@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.PNG";
 import whitetext from "../assets/whitetext.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faPhoneAlt, faUserPlus } from '@fortawesome/free-solid-svg-icons';
@@ -25,14 +25,16 @@ const Footer = () => {
             <footer className="container">
                 <div className="flex footer-wrap">
                     <div className="info sub-section">
-                        <div className="logo-wrap flex align-center">
-                            <div className="logo flex align-center">
-                                <img src={logo} alt="logo"/>
+                        <a href="/" className="block">
+                            <div className="logo-wrap flex">
+                                <div className="logo flex align-center">
+                                    <img src={logo} alt="logo"/>
+                                </div>
+                                <div className="logo-text flex align-center">
+                                    <img src={whitetext} alt="text"/>
+                                </div>
                             </div>
-                            <div className="logo-text">
-                                <img src={whitetext} alt="text"/>
-                            </div>
-                        </div>
+                        </a>
                         <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain.</p>
                     </div>
                     <div className="pages sub-section">

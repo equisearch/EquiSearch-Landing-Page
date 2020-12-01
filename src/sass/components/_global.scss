@@ -135,6 +135,19 @@ img {
 .app {
     background: $dark;
 }
+.logo {
+    width: 1.5rem !important;
+}
+.logo + .logo-text {
+    margin-left: 0.5rem;
+}
+.logo {
+    width: 3rem;
+}
+.logo-text {
+    width: 8rem;
+    margin-bottom: 7px;
+}
 .btn {
     padding: 1rem 1rem;
     font-family: $raleway;
