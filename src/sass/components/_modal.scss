@@ -12,6 +12,7 @@
         width: 100%;
         height: 100%;
         .modal {
+            height: 320px !important;
             background: $white;
             width: 90%;
             height: 500px;
@@ -26,6 +27,9 @@
                 .close {
                     right: 0;
                     margin: 1rem;
+                }
+                iframe {
+                    width: 100%;
                 }
             }
         }

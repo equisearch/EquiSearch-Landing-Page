@@ -9,6 +9,7 @@ const Modal = (props) => {
         color: "#848484",
         fontSize: "1.5rem"
     }}/>;
+    const iframe = `<iframe src="https://equisearch.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>`;
 
     // functions
     const handleClick = e => { // close modal when outside of modal is clicked on
@@ -25,6 +26,7 @@ const Modal = (props) => {
                 <div className="modal center">
                     <div className="relative content-wrap">
                         <button type="button" className="close absolute cursor" onClick={props.close}>{closeIcon}</button>
+                        <div dangerouslySetInnerHTML={{__html: iframe}} className="iframe"></div>
                     </div>
                 </div>
             </div>
