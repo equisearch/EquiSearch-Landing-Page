@@ -27,7 +27,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-form">
                         <h1 className="title">Contact Us</h1>
-                        <form className="flex direction-column" action="https://formspree.io/f/xwkwnlob" method="POST">
+                        <form className="flex direction-column" action="https://formspree.io/f/xbjpapwy" method="POST">
                             <input type="text" className="name input block" name="name" placeholder="Name"/>
                             <input type="email" className="email input block" name="_replyto" placeholder="Email"/>
                             <textarea className="message input block" name="message" placeholder="Message"></textarea>
