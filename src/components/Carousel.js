@@ -8,8 +8,8 @@ const Carousel = () => {
         {
             id: 1,
             text: {
-                main: "What is Lorem Ipsum",
-                sub: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                main: "What is EquiSearch?",
+                sub: "EquiSearch is an online learning platform, like Coursera, streamlining the independent research process for students."
             },
             button: {
                 text: "ABOUT",
@@ -20,8 +20,8 @@ const Carousel = () => {
         {
             id: 2,
             text: {
-                main: "Why do we use it",
-                sub: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+                main: "Our Team",
+                sub: "Our team is committed to redefining the undergraduate research experience and ensuring students across the globe can work on groundbreaking research projects."
             },
             button: {
                 text: "OUR TEAM",
@@ -32,8 +32,8 @@ const Carousel = () => {
         {
             id: 3,
             text: {
-                main: "Where does it come from",
-                sub: "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested."
+                main: "Learn more",
+                sub: "If you're interested in learning more about EquiSearch, follow us on substack or on Linkedin."
             },
             button: {
                 text: "GET IN TOUCH",
