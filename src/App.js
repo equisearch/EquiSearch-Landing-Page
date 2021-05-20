@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import About from './components/About';
-import Carousel from './components/Carousel';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -12,6 +11,7 @@ import { smoothScroll, backToTop } from './components/dom.js';
 import LinkButton from './components/LinkButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import Showcase from './components/Showcase';
 
 export class App extends Component {
 
@@ -42,7 +42,7 @@ export class App extends Component {
     return (
       <div className="app">
         <Header open={this.openModal.bind(this)}/>
-        <Carousel/>
+        <Showcase/>
         <Purpose/>
         <About/>
         <Team/>
