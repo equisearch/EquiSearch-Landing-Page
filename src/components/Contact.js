@@ -15,15 +15,15 @@ const Contact = () => {
             <div className="container">
                 <div className="flex contact-wrap">
                     <div className="membership">
-                        <h1 className="title">Become a Member</h1>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p>
+                        <h1 className="title">Join our Team</h1>
+                        <p>Get a chance to join a fast-paced startup environment and work towards redefining the undergraduate research experience.</p>
                         <ul>
                             <li>{checkIcon}<span>Able to commit 5 hours a week</span></li>
                             <li>{checkIcon}<span>Comfortable in fast-paced environments</span></li>
                             <li>{checkIcon}<span>Diligent and attentive listener</span></li>
                             <li>{checkIcon}<span>Persistant and Communicative</span></li>
                         </ul>
-                        <p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best!</p>
+                        <p>Sign up for company updates <a href="https://equisearched.substack.com/p/coming-soon?r=ep31n&utm_campaign=post&utm_medium=web&utm_source=copy">here</a>!</p>
                     </div>
                     <div className="contact-form">
                         <h1 className="title">Contact Us</h1>

@@ -9,7 +9,7 @@ const Purpose = () => {
             id: 1,
             text: {
                 main: "Research",
-                sub: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+                sub: "Research is a fundamental part of the undergraduate experience. With the rapid adoption and transition to online learning environments, the way independent research is serviced needs to be redefined to help students succeed."
             },
             img: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
             icon: faSearchDollar
@@ -18,7 +18,7 @@ const Purpose = () => {
             id: 2,
             text: {
                 main: "Mentorship",
-                sub: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+                sub: "The core part of any research project is mentorship. EquiSearch leverages artifical intelligence and machine learning to help graduate student mentors connect with their undergraduate peers to collaborate on interdisciplinary independent research projects."
             },
             img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
             icon: faHandsHelping
@@ -26,8 +26,8 @@ const Purpose = () => {
         {
             id: 3,
             text: {
-                main: "Sustainability",
-                sub: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+                main: "Impact",
+                sub: "Our goal is to not only help students pursue their research endeavors in a streamlined, intuititve fashion, but to also ensure their work takes appropriate impact."
             },
             img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1302&q=80",
             icon: faChartLine
@@ -37,7 +37,7 @@ const Purpose = () => {
     return (
         <div className="purpose section">
             <div className="container">
-                <h1 className="title">Our Purpose</h1>
+                <h1 className="title">Our Vision</h1>
                 <div className="flex">
                     {info.map(item => {
                         return (
