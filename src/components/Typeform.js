@@ -6,8 +6,15 @@ const Typeform = (props) => {
         <div className="typeform">
             <ReactTypeformEmbed
                 url="https://demo.typeform.com/to/njdbt5"
-                style={{ zIndex: 3, position: "fixed" }}
-                autoClose={1000}
+                style={{ 
+                    zIndex: 3, 
+                    position: "fixed",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    width: "80%",
+                    height: "500px"
+                }}
             />
         </div>
     )
