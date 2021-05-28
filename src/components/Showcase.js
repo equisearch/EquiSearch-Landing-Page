@@ -19,7 +19,7 @@ const Showcase = () => {
                     <input type="text" onChange={e => setEmail(e.target.value)} value={email}/>
                     <button className="btn btn-primary">Get Started</button>
                 </form>
-                {submit ? <Typeform/> : ""}
+                {submit ? <Typeform setSubmit={setSubmit}/> : ""}
             </div>
         </div>
     )
