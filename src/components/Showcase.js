@@ -3,9 +3,10 @@ import Typeform from './Typeform';
 
 const Showcase = () => {
 
-    const [email, setEmail] = useState("");
-    const [submit, setSubmit] = useState(false);
+    const [email, setEmail] = useState(""); // save user's email input
+    const [submit, setSubmit] = useState(false); 
 
+    // clear input field and set submit to true
     const handleEmailInput = e => {
         e.preventDefault();
         setEmail("");
