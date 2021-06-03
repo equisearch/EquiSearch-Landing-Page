@@ -20,7 +20,7 @@ const Header = (props) => {
     }
 
     return (
-        <header id="Header">
+        <header id="Header" className="fixed w-100">
             <div className="container">
                 <div className="flex align-center flex-between">
                     <a href="/" className="block">
