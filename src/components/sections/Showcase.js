@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Typeform from './Typeform';
+import Typeform from '../utils/Typeform';
 
 const Showcase = () => {
 

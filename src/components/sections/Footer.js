@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from "../assets/logo.PNG";
-import whitetext from "../assets/whitetext.svg";
+import logo from "../../assets/logo.PNG";
+import whitetext from "../../assets/whitetext.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faPhoneAlt, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 

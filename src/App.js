@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Modal from './components/Modal';
-import Purpose from './components/Purpose';
-import Team from './components/Team';
+import About from './components/sections/About';
+import Contact from './components/sections/Contact';
+import Footer from './components/sections/Footer';
+import Header from './components/sections/Header';
+import Modal from './components/utils/Modal';
+import Purpose from './components/sections/Purpose';
+import Team from './components/sections/Team';
 import "./sass/main.scss";
-import { smoothScroll, backToTop } from './components/dom.js';
-import LinkButton from './components/LinkButton';
+import { smoothScroll, backToTop } from './components/utils/dom.js';
+import LinkButton from './components/utils/LinkButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import Showcase from './components/Showcase';
+import Showcase from './components/sections/Showcase';
 
 export class App extends Component {
 

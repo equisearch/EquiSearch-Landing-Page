@@ -1,5 +1,6 @@
 import $ from "jquery";
 
+// jquery plugin for smooth scroll on a web page
 export function smoothScroll() {
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
@@ -10,6 +11,7 @@ export function smoothScroll() {
     });
 }
 
+// when called, brings user back to the top of the page
 export function backToTop() {
     window.addEventListener("scroll", () => {
         let currPosition = window.pageYOffset;

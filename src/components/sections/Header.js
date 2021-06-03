@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import logo from "../assets/logo.PNG";
-import whitetext from "../assets/whitetext.svg";
+import logo from "../../assets/logo.PNG";
+import whitetext from "../../assets/whitetext.svg";
 import MobileNav from './MobileNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
