@@ -3,7 +3,7 @@
 
 header {
     padding: 0.75rem 0;
-    background: $dark;
+    z-index: 3;
     .menu-btn {
         @include media-query-grow(1024px) {
             display: none;
