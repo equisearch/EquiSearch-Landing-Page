@@ -17,10 +17,14 @@ const Showcase = () => {
         <div className="showcase relative" id="top">
             <div className="tint"></div>
             <div className="container">
-                <form onSubmit={handleEmailInput}>
-                    <input type="text" onChange={e => setEmail(e.target.value)} value={email}/>
-                    <button className="btn btn-primary">Get Started</button>
-                </form>
+                <div className="showcase-content">
+                    <h1>What is EquiSearch?</h1>
+                    <p>EquiSearch is an online learning platform, like Coursera, streamlining the independent research process for students.</p>
+                    <form onSubmit={handleEmailInput}>
+                        <input type="text" onChange={e => setEmail(e.target.value)} value={email} className="showcase-input"/>
+                        <button className="btn btn-primary">GET STARTED</button>
+                    </form>
+                </div>
                 {submit ? <Typeform setSubmit={setSubmit}/> : ""}
             </div>
         </div>

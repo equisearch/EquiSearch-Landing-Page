@@ -10,6 +10,21 @@
     .tint {
         background: $black;
     }
+    .showcase-content {
+       @include center("y", absolute);
+       color: $white;
+       font-family: $poppins;
+       h1, p {
+           text-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+           margin-bottom: 1rem;
+       }
+       h1 {
+           font-size: 3rem;
+       }
+       p {
+           max-width: 70%;
+       }
+    }
 }
 .typeform {
     animation-name: fadeIn;
