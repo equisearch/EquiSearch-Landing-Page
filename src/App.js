@@ -55,7 +55,7 @@ export class App extends Component {
               color: "#fff",
               fontSize: "1rem"
             }}/>
-          } link="#Header"/>
+          } link="#top"/>
         </div>
       </div>
     )

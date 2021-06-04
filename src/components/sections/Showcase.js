@@ -14,7 +14,8 @@ const Showcase = () => {
     }
 
     return (
-        <div className="showcase">
+        <div className="showcase relative" id="top">
+            <div className="tint"></div>
             <div className="container">
                 <form onSubmit={handleEmailInput}>
                     <input type="text" onChange={e => setEmail(e.target.value)} value={email}/>
