@@ -9,6 +9,7 @@
     background-position: center center;
     .tint {
         background: $black;
+        opacity: 0.5;
     }
     .showcase-content {
        @include center("y", absolute);
@@ -23,6 +24,30 @@
        }
        p {
            max-width: 70%;
+       }
+       .showcase-input {
+           padding: 0.9rem;
+           border: 0;
+           border-bottom: 1px solid $white;
+           background: transparent;
+           color: $white;
+           margin-right: 1rem;
+           margin-bottom: 1rem;
+           width: 100%;
+           &::placeholder {
+               color: $white;
+               font-family: $raleway;
+           }
+           @include media-query-grow(768px) {
+            margin-bottom: 0;
+            width: auto;
+           }
+       }
+       form {
+           flex-direction: column;
+           @include media-query-grow(768px) {
+            flex-direction: row;
+           }
        }
     }
 }
