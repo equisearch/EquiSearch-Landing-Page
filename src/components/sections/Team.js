@@ -4,6 +4,7 @@ import Scott from '../../assets/scott.jpg'
 import Jacob from '../../assets/jacob.jpg'
 import Winni from '../../assets/winni.jpg'
 import Angela from '../../assets/angela.jpg'
+import Kevin from '../../assets/kevin.jpg'
 
 const Team = () => {
 
@@ -37,7 +38,7 @@ const Team = () => {
         },
         {
             name: "Kevin Wang",
-            img: "https://ca.slack-edge.com/T01ADTQ34Q1-U01A1FG95PV-72f31a2552de-512",
+            img: Kevin,
             role: "COO"
         },
         {
