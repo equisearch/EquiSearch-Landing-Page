@@ -16,7 +16,7 @@ const About = () => {
                     <div className="about-info">
                         <h3>What is EquiSearch?</h3>
                         <p>EquiSearch is a platform streamlining the independent research process for students. </p>
-                        <p>Through a collection of massive online open curriculum, project-based learning, and mentorship, students are equipt with the resources they need to thrive in the academic independent research environment.</p>
+                        <p>Through a collection of massive online open curricula, project-based learning, and mentorship, students are equipt with the resources they need to thrive in the academic independent research environment.</p>
                         <p>Schedule a time to meet with our team or read our product guide here:</p>
                         <div className="button">
                             <LinkButton text="OUR TEAM" link="#Team"/>

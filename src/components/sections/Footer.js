@@ -35,7 +35,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </a>
-                        <p>EquiSearch is a platform streamlining the independent research process for students. Through a collection of massive online open curriculum, project-based learning, and mentorship, students are equipt with the resources they need to thrive in the academic independent research environment.</p>
+                        <p>EquiSearch is a platform streamlining the independent research process for students. Through a collection of massive online open curricula, project-based learning, and mentorship, students are equipt with the resources they need to thrive in the academic independent research environment.</p>
                     </div>
                     <div className="pages sub-section">
                         <h2 className="title-left">Pages</h2>

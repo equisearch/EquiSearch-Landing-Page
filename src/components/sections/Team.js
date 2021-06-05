@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
+import Scott from '../../assets/scott.jpg'
+import Jacob from '../../assets/jacob.jpg'
+import Winni from '../../assets/winni.jpg'
+import Angela from '../../assets/angela.jpg'
 
 const Team = () => {
 
@@ -28,7 +32,7 @@ const Team = () => {
     const teamMembers = [
         {
             name: "Scott Blender",
-            img: "https://ca.slack-edge.com/T01ADTQ34Q1-U01A7ESKY4C-e915218b7d50-512",
+            img: Scott,
             role: "CEO"
         },
         {
@@ -37,40 +41,30 @@ const Team = () => {
             role: "COO"
         },
         {
-            name: "Regina Liu",
-            img: "",
-            role: "CMO"
-        },
-        {
-            name: "Kenneth Zhang",
-            img: "https://ca.slack-edge.com/T01ADTQ34Q1-U01A4QH0D0F-1b185ba5e932-512",
-            role: "Machine Learning Engineer"
-        },
-        {
             name: "Chinmayi Balusu",
             img: "https://ca.slack-edge.com/T01ADTQ34Q1-U01A8B7J8CS-e34a6dbfabc9-512",
             role: "Advisor"
         },
         {
             name: "Winni Zheng",
-            img: "https://ca.slack-edge.com/T01ADTQ34Q1-U01ADTUL8CR-6500f9972785-512",
+            img: Winni,
+            role: "UI/UX"
+        },
+        {
+            name: "Angela Tan",
+            img: Angela,
             role: "UI/UX"
         },
         {
             name: "Jason Jung",
             img: "https://ca.slack-edge.com/T01ADTQ34Q1-U01EF9WGLAK-e491204a84b3-512",
-            role: "Front End Intern"
+            role: "Lead Front End Engineer"
         },
         {
             name: "Jacob Shin",
-            img: "",
-            role: "Back End Intern"
+            img: Jacob,
+            role: "Lead Back End Engineer"
         },
-        {
-            name: "Jesse Anderson",
-            img: "https://ca.slack-edge.com/T01ADTQ34Q1-U01AD637W2H-c5b4add80994-512",
-            role: "Back End Intern"
-        }
     ];
     const settings = {
         dots: false,

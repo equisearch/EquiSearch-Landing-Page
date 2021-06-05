@@ -1,15 +1,16 @@
 @import "../utils/variables";
 @import "../utils/mixins";
+$bk-img: url("../../assets/header-background.jpg");
 
 .showcase {
     height: 85vh;
-    background-image: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    background-image: $bk-img;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     .tint {
         background: $black;
-        opacity: 0.5;
+        opacity: 0.25;
     }
     .showcase-content {
        @include center("y", absolute);
