@@ -12,6 +12,8 @@ import LinkButton from './components/utils/LinkButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import Showcase from './components/sections/Showcase';
+import { createStore, StoreProvider } from 'easy-peasy';
+import model from './model';
 
 export class App extends Component {
 
@@ -39,25 +41,30 @@ export class App extends Component {
   }
 
   render() {
+
+    const store = createStore(model);
+
     return (
-      <div className="app">
-        <Header open={this.openModal.bind(this)}/>
-        <Showcase/>
-        <Purpose/>
-        <About/>
-        <Team/>
-        <Contact/>
-        <Footer/>
-        <Modal modal={this.state.modal} close={this.closeModal.bind(this)}/>
-        <div className="back-to-top">
-          <LinkButton text={
-            <FontAwesomeIcon icon={faChevronUp} style={{
-              color: "#fff",
-              fontSize: "1rem"
-            }}/>
-          } link="#top"/>
+      <StoreProvider store={store}>
+        <div className="app">
+          <Header open={this.openModal.bind(this)}/>
+          <Showcase/>
+          <Purpose/>
+          <About/>
+          <Team/>
+          <Contact/>
+          <Footer/>
+          <Modal modal={this.state.modal} close={this.closeModal.bind(this)}/>
+          <div className="back-to-top">
+            <LinkButton text={
+              <FontAwesomeIcon icon={faChevronUp} style={{
+                color: "#fff",
+                fontSize: "1rem"
+              }}/>
+            } link="#top"/>
+          </div>
         </div>
-      </div>
+      </StoreProvider>
     )
   }
 }
