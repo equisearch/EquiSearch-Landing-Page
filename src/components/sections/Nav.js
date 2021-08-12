@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = (props) => {
 
@@ -18,6 +19,7 @@ const Nav = (props) => {
                     <li><a href="#About" className="nav-link">About</a></li>
                     <li><a href="#Team" className="nav-link">Team</a></li>
                     <li><a href="#Contact" className="nav-link">Contact</a></li>
+                    <li><Link to="/login" className="nav-link">Login</Link></li>
                     <li><button type="button" className="btn btn-primary" onClick={handleClick}>SUBSCRIBE</button></li>
                 </ul>
             </nav>
