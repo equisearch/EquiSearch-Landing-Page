@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import About from './components/sections/About';
 import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
@@ -15,44 +15,37 @@ import Showcase from './components/sections/Showcase';
 import { createStore, StoreProvider } from 'easy-peasy';
 import model from './model';
 
-export class App extends Component {
+export const App = () => {
 
-  constructor() {
-    super();
-  }
-
-  componentDidMount() {
+  useEffect(() => {
     smoothScroll();
     backToTop();
-  }
+  }, []);
 
-  render() {
+  const store = createStore(model);
 
-    const store = createStore(model);
-
-    return (
-      <StoreProvider store={store}>
-        <div className="app">
-          <Header/>
-          <Showcase/>
-          <Purpose/>
-          <About/>
-          <Team/>
-          <Contact/>
-          <Footer/>
-          <Modal/>
-          <div className="back-to-top">
-            <LinkButton text={
-              <FontAwesomeIcon icon={faChevronUp} style={{
-                color: "#fff",
-                fontSize: "1rem"
-              }}/>
-            } link="#top"/>
-          </div>
+  return (
+    <StoreProvider store={store}>
+      <div className="app">
+        <Header/>
+        <Showcase/>
+        <Purpose/>
+        <About/>
+        <Team/>
+        <Contact/>
+        <Footer/>
+        <Modal/>
+        <div className="back-to-top">
+          <LinkButton text={
+            <FontAwesomeIcon icon={faChevronUp} style={{
+              color: "#fff",
+              fontSize: "1rem"
+            }}/>
+          } link="#top"/>
         </div>
-      </StoreProvider>
-    )
-  }
+      </div>
+    </StoreProvider>
+  )
 }
 
 export default App
