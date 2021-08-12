@@ -34,7 +34,6 @@ export const App = () => {
         <Team/>
         <Contact/>
         <Footer/>
-        <Modal/>
         <div className="back-to-top">
           <LinkButton text={
             <FontAwesomeIcon icon={faChevronUp} style={{

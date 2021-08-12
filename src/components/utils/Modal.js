@@ -15,17 +15,17 @@ const Modal = (props) => {
     const handleClick = e => { // close modal when outside of modal is clicked on
         const element = e.target;
         if (element.className === "modal-wrap relative") {
-            props.close();
+            props.setOpen(false);
         }
     }
 
     return (
-        <div className={`modal-bg fixed ${(props.modal) ? "block" : "none"}`} onClick={handleClick}>
+        <div className={`modal-bg fixed ${(props.open) ? "block" : "none"}`} onClick={handleClick}>
             <div className="tint"></div>
             <div className="modal-wrap relative">
                 <div className="modal center">
                     <div className="relative content-wrap">
-                        <button type="button" className="close absolute cursor" onClick={props.close}>{closeIcon}</button>
+                        <button type="button" className="close absolute cursor" onClick={() => props.setOpen(false)}>{closeIcon}</button>
                         <div dangerouslySetInnerHTML={{__html: iframe}} className="iframe"></div>
                     </div>
                 </div>

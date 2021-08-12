@@ -5,7 +5,7 @@ const Nav = (props) => {
 
     // functions
     const handleClick = () => {
-        
+        props.setOpen(true);
     }
 
     return (

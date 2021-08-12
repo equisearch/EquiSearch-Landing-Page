@@ -5,11 +5,11 @@ import MobileNav from './MobileNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Nav from './Nav';
+import Modal from '../utils/Modal';
 
-const Header = (props) => {
+const Header = () => {
 
-    // variables
-    const { open } = props; // sets openModal to true
+    const [open, setOpen] = useState(false);
 
     // state 
     const [mobileNav, setMobileNav] = useState(false);
@@ -39,10 +39,11 @@ const Header = (props) => {
                             fontSize: "1.5rem"
                         }}/>
                     </button>
-                    <Nav open={open}/>
+                    <Nav setOpen={setOpen}/>
                 </div>
             </div>
             <MobileNav display={mobileNav} open={open}/>
+            <Modal setOpen={setOpen} open={open}/>
         </header>
     )
 }
