@@ -3,12 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Nav = (props) => {
 
-    // variables
-    const { open } = props; // sets openModal to true
-
     // functions
     const handleClick = () => {
-        open();
+        
     }
 
     return (

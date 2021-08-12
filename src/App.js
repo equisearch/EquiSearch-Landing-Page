@@ -19,22 +19,8 @@ export class App extends Component {
 
   constructor() {
     super();
-    this.state = {
-      modal: false
-    }
   }
 
-  // functions
-  openModal() {
-    this.setState({
-      modal: true
-    });
-  }
-  closeModal() {
-    this.setState({
-      modal: false
-    });
-  }
   componentDidMount() {
     smoothScroll();
     backToTop();
@@ -47,14 +33,14 @@ export class App extends Component {
     return (
       <StoreProvider store={store}>
         <div className="app">
-          <Header open={this.openModal.bind(this)}/>
+          <Header/>
           <Showcase/>
           <Purpose/>
           <About/>
           <Team/>
           <Contact/>
           <Footer/>
-          <Modal modal={this.state.modal} close={this.closeModal.bind(this)}/>
+          <Modal/>
           <div className="back-to-top">
             <LinkButton text={
               <FontAwesomeIcon icon={faChevronUp} style={{

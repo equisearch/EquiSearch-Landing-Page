@@ -5,11 +5,10 @@ const MobileNav = (props) => {
 
     // variables
     const { display } = props; // set display to true when hamburger menu is clicked (mobileNav is opened)
-    const { open } = props; // sets openModal to true
 
     // functions 
     const handleClick = () => {
-        open();
+        
     }
 
     return (
