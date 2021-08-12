@@ -42,7 +42,7 @@ const Header = () => {
                     <Nav setOpen={setOpen}/>
                 </div>
             </div>
-            <MobileNav display={mobileNav} open={open}/>
+            <MobileNav display={mobileNav} setOpen={setOpen}/>
             <Modal setOpen={setOpen} open={open}/>
         </header>
     )

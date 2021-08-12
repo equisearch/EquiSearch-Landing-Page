@@ -8,7 +8,7 @@ const MobileNav = (props) => {
 
     // functions 
     const handleClick = () => {
-        
+        props.setOpen(true);
     }
 
     return (
