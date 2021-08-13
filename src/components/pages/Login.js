@@ -6,7 +6,6 @@ const Login = () => {
     return (
         <div>
             <Header/>
-            <Modal/>
             login
         </div>
     )
